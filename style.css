@@ -1,0 +1,866 @@
+/*
+	Theme Name: Pinbin
+	Theme URI: http://colorawesomeness.com/themes/pinbin
+	Description: Pinbin WordPress theme is a fully responsive theme that looks great on any devices including iPad, iPhone or any other mobile device. This theme is inspired by Pinterest grid system that puts images first.  Pinbin is a perfect fit for photographers, web designers and anyone who likes to show off their photos, mockups, infographics and any other images.  Some other great features are sticky (fixed) navigation, translation ready, responsive layout, simplicity and minimalism.
+	Author: Color Awesomeness
+	Author URI: http://colorawesomeness.com/themes
+	Version: 1.4.7
+	License: GNU General Public License v2 or later
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+	Tags: light, white, brown, gray, black, photoblogging, one-column, flexible-width, custom-background, custom-menu, featured-images, full-width-template, microformats, theme-options
+*/
+
+/* colour styles : reset
+-------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  border: 0;
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body  { 
+  font-size:12px; 
+  line-height:20px;  
+  font-family: Helvetica, sans-serif;
+  word-wrap: break-word;
+  margin: 0;
+}
+
+#wrap { 
+  margin-left:3%;
+}
+
+/* Typohraphy
+--------------------------------------------------------------*/
+/* Fonts
+--------------------------------------------------------------*/
+h1,h2,h3,h4,h5 {
+  color: #111;
+}
+h1 {
+  font-size: 36px;
+  line-height: 46px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 32px;
+}
+h2 a.front-link {
+  text-decoration: none;
+}
+h3 {
+  font-size: 18px;
+  line-height: 28px;
+}
+h4 {
+  font-size: 16px;
+  line-height: 28px;
+}
+h5 {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+}
+h6 {
+  font-size: 13px;
+  line-height: 24px;
+  color: #858585;
+}
+p {
+  font-size: 13px;
+  color: #454545;
+  line-height: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+/* Lists -bullet points
+--------------------------------------------------------------*/
+ul li {
+  font-size: 12px;
+  color: #858585;
+  padding-left: 10px;
+}
+ol {
+  margin-left: 25px;
+}
+ol li {
+  font-size: 12px;
+  color: #858585;
+  padding-left: 10px;
+  margin-bottom: 7px;
+}
+ul,ol {
+  margin: 0 0 1.5em 3em;
+}
+ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+ol {
+  list-style: decimal;
+}
+ol li ol {
+  list-style-type: lower-alpha;
+}
+ol li ol li ol {
+  list-style-type: lower-roman;
+}
+ul ul,ol ol,ul ol,ol ul {
+  margin-bottom: 0;
+  margin-left: 1.5em;
+}
+hr {
+  background: url(./images/hr.jpg) top center no-repeat;
+  border: 0;
+  outline: 0;
+  clear: both;
+  height: 10px;
+}
+b,strong {
+  font-weight: bold;
+}
+/* Text link style
+--------------------------------------------------------------*/
+a:link {
+  color: #444444;
+  text-decoration: underline;
+}
+a:visited {
+  color: #111;
+  text-decoration: underline;
+}
+a:hover {
+  color: #111;
+  text-decoration: none;
+}
+a:active {
+  color: #444444;
+  text-decoration: none;
+}
+a:focus {
+  outline-style: none;
+}
+/* Main Navigation
+--------------------------------------------------------------*/
+#main-nav-wrapper {
+  background: #fff;
+  float: left;
+  position: relative;
+  width: 100%;
+  min-height: 42px;
+  max-height: 86px;
+  z-index: 2;
+}
+.main-nav {
+  display: block;
+  float: left;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+.main-nav ul {
+  padding: 5px 25px;
+  position: relative;
+  width: 960px;
+  margin-top: -1px;
+}
+.main-nav ul li {
+  display: inline;
+  float: left;
+  padding: 12px 12px;
+  position: relative;
+}
+.main-nav ul li a {
+  color: #999;
+  font-size: 13px;
+  text-decoration: none;
+}
+.main-nav ul li:hover a,.main-nav li.current-menu-item a,.main-nav li.current-post-parent a {
+  color: #111;
+}
+.main-nav ul li ul {
+  display: none;
+  z-index: 9999;
+}
+.main-nav ul ul li a:hover {
+  color: #111 !important;
+}
+.main-nav ul li:hover ul {
+  background: #fff;
+  -webkit-box-shadow: 0 3px 7px -2px #333;
+  box-shadow: 0 3px 7px -2px #333;
+  display: block;
+  margin-top: 5px;
+  padding: 5px;
+  position: absolute;
+  left: 0px;
+  top: 33px;
+  width: 150px;
+}
+.main-nav ul li:hover ul li {
+  padding: 4px;
+  position: relative;
+  width: 97%;
+}
+.main-nav ul ul li a {
+  color: #999 !important;
+  height: auto;
+  display: block;
+}
+.main-nav ul .sub-menu li,.main-nav ul .children li {
+  background: none;
+  border-bottom: 1px dotted #e8e8e8;
+  width: 100%;
+}
+.main-nav ul li:hover ul li ul {
+  display: none;
+}
+.main-nav ul li:hover ul li:hover ul {
+  border: none;
+  display: block;
+  margin: 0;
+  position: absolute;
+  left: 155px;
+  top: 0;
+  width: 150px;
+}
+#header {
+  padding-bottom: 95px;
+}
+/* Logo
+--------------------------------------------------------------*/
+#logo img {
+  max-height: 50px;
+  padding: 0 0 0 3%;
+  position: relative;
+  float: left;
+}
+#logo img:hover,.pinbin-image img:hover {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+}
+#logo img,.pinbin-image img {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+  -webkit-transition: opacity 0.3s linear;
+  -moz-transition: opacity 0.3s linear;
+  -o-transition: opacity 0.3s linear;
+  -ms-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+}
+/* Footer
+--------------------------------------------------------------*/
+#footer-area {
+  width: 100%;
+  display: inline;
+  float: left;
+  padding-top: 10px;
+  margin-top: 20px;
+  clear: both;
+  border-top: 2px solid #fff;
+}
+#footer-area .widget {
+  width: 310px;
+  margin-right: 10px;
+  padding-top: 15px;
+  display: inline;
+  float: left;
+  font-size: 12px;
+  color: #454545;
+  line-height: 18px;
+}
+#footer-area .widget h3 {
+  color: #858585;
+  background: #fff;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+#footer-area .widget p {
+  color: #111;
+}
+#footer-area .widget ul {
+  margin-left: 0px;
+}
+#footer-area .widget li {
+  color: #858585;
+}
+#footer-area .widget a {
+  color: #444444;
+}
+#footer-area .widget a:hover {
+  color: #111;
+}
+#footer-area .widget-copy {
+  width: 280px;
+  overflow: hidden;
+  display: inline;
+  float: left;
+  margin-left: 10px;
+}
+#footer-area .widget-copy a {
+  text-decoration: none;
+}
+.widget img {
+  max-width: 100%;
+  height: auto;
+}
+#footer-area .wp-caption {
+  border: 1px solid #999;
+}
+#searchsubmit,button,.comment-submit,input[type="submit"] {
+  clear: both;
+  width: auto;
+  height: auto;
+  line-height: 18px;
+  background: url(./images/button-back.gif) bottom left repeat-x !important;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 4px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  text-shadow: 0 1px 0 rgba( 255, 255, 255, 0.45 ) !important;
+  min-width: 0;
+}
+#searchsubmit:hover,.comment-submit:hover {
+  background: #fff url(./images/button-back-over.gif) bottom left repeat-x;
+  border: 1px solid #959595;
+}
+/* Footer copyright
+--------------------------------------------------------------*/
+#copyright {
+  clear: both;
+  width: 100%;
+  border-top: 2px solid #fff;
+  display: inline;
+  float: left;
+  margin-top: 20px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+#copyright p {
+  padding-top: 15px;
+  color: #4f5356;
+  font-size: 12px;
+}
+#copyright a {
+  color: #858585;
+  text-decoration: none;
+}
+#copyright a:hover {
+  color: #111;
+  text-decoration: underline;
+}
+/* Post and page style
+--------------------------------------------------------------*/
+.type-post,#main-nav-wrapper,nav {
+  -webkit-box-shadow: 0 4px 15px -5px #555;
+  box-shadow: 0 4px 15px -5px #555;
+}
+.type-post,.type-page,.type-attachment,#post-area .post {
+  border-right: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+}
+.type-post,.type-page,.type-attachment {
+  width: 750px;
+  background: #fff;
+  margin-right: 10px;
+  margin-top: 15px;
+  float: left;
+}
+.type-post {
+  position: relative;
+}
+.pinbin-image img {
+  z-index: 5;
+}
+.pinbin-category {
+  position: absolute;
+  width: auto;
+  background: #000;
+  zoom: 1;
+  filter: alpha(opacity=70);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=70);
+  opacity: 0.7;
+  margin-top: -36px;
+  z-index: 1;
+  height: 30px;
+  overflow: hidden;
+  left: 0;
+}
+.pinbin-category p {
+  margin: 0;
+  padding: 0;
+  line-height: 30px;
+  padding-left: 20px;
+  padding-right: 40px;
+  color: #fff;
+  font-style: italic;
+}
+.pinbin-category a {
+  color: #fff;
+  font-style: italic;
+  text-decoration: none;
+}
+.pinbin-category a:hover {
+  color: #777;
+  text-decoration: none;
+}
+.pinbin-copy {
+  padding: 20px 8%;
+}
+.pinbin-meta {
+  width: 100%;
+  display: inline-block;
+  color: #8e8e8e;
+  font-size: 11px;
+  margin-bottom: 10px;
+  padding-bottom: 0px;
+  border-bottom: 1px dotted #cccccc;
+}
+.size-full {
+  max-width: 100%;
+  height: inherit;
+}
+#post-area .sticky {
+  background: #ececec !important;
+}
+#post-area .sticky:hover {
+  background: #fff !important;
+}
+/* Post style on frontpage
+--------------------------------------------------------------*/
+#post-area .post {
+  width: 300px;
+  background: #FFF;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+#post-area .post .pinbin-copy {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  overflow: hidden;
+  clear: both;
+  width: 250px;
+}
+#post-area .post .pinbin-date {
+  width: 115px;
+  color: #8e8e8e;
+  font-size: 11px;
+  border-bottom: 1px dotted #cccccc;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+#post-area .post .pinbin-link a {
+  text-decoration: none;
+  background: #444;
+  padding: 5px 10px;
+  color: #fafafa;
+  font-size: 12px;
+  float: right;
+  cursor: pointer;
+  position: absolute;
+  margin-left: 245px;
+  margin-top: -15px;
+}
+#post-area .post .pinbin-link a:hover {
+  background: #777;
+}
+#post-area .post .pinbin-link a,.post-next a,.post-prev a,.post-next a,.post-prev a {
+  -webkit-transition: background 0.3s linear;
+  -moz-transition: background 0.3s linear;
+  -o-transition: background 0.3s linear;
+  -ms-transition: background 0.3s linear;
+  transition: background 0.3s linear;
+}
+/* Single post navigation
+--------------------------------------------------------------*/
+.post-nav {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+.post-next a,.post-prev a {
+  text-decoration: none;
+  background: #444;
+  padding: 8px 9px;
+  color: #fafafa;
+  font-size: 18px;
+  text-transform: uppercase;
+  float: right;
+  cursor: pointer;
+  position: absolute;
+}
+.post-next a {
+  margin-left: 705px;
+  margin-top: 15px;
+}
+.post-prev a {
+  position: absolute;
+  margin-left: -10px;
+  margin-top: 15px;
+}
+.post-next a:hover,.post-prev a:hover {
+  background: #777;
+}
+.posttags {
+  font-color: #8e8e8e;
+  font-size: 11px;
+  float: right;
+}
+.view-next {
+  float: right;
+}
+.view-previous {
+  float: left;
+}
+.view-previous,.view-next {
+  margin-top: 20px;
+}
+/* Comments
+--------------------------------------------------------------*/
+.comments-area ol {
+  padding: 0;
+}
+.comments-area li {
+  width: 100%;
+  clear: both;
+  float: left;
+  margin-bottom: 10px;
+}
+.comments-area {
+  margin-left: -10px;
+}
+.comment {
+  border-bottom: 1px solid #8e8e8e;
+  width: 630px;
+  margin-left: -15px;
+}
+.avatar {
+  display: none;
+}
+.reply {
+  display: none;
+}
+.comment-meta a {
+  text-decoration: none;
+}
+.comment-author {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+#comment {
+  width: 97%;
+  height: 180px;
+}
+.comment-form-author,.comment-form-email,.comment-form-url {
+  padding: 0;
+}
+label {
+  display: inline-block;
+}
+.text-input,#s,input[type=text],input[type=password],textarea {
+  clear: both;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+  padding: 7px;
+  color: #555;
+  font-size: 12px;
+}
+#s {
+  width: auto;
+  margin-top: 3px;
+}
+.comment-input {
+  clear: both;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+  width: 96%;
+  padding: 7px;
+  color: #555;
+  font-size: 12px;
+}
+.bypostauthor {
+}
+/* Other
+--------------------------------------------------------------*/
+.clear {
+  clear: both;
+}
+.aligncenter {
+  display: block;
+  margin: 0 auto;
+}
+.alignleft {
+  float: left;
+  margin: 10px 10px 20px 0;
+}
+.alignright {
+  float: right;
+  margin: 10px 0 20px 0;
+}
+.wp-caption {
+  text-align: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.wp-caption-text {
+  margin-top: 2px;
+  text-align: left;
+  font-style: italic;
+  font-size: 11px;
+  color: #999;
+}
+.wp-caption {
+  border: 1px solid #ccc;
+  max-width: 99%;
+}
+.wp-caption.aligncenter,.wp-caption.alignleft,.wp-caption.alignright {
+  margin-bottom: 1.5em;
+}
+.wp-caption img {
+  display: block;
+  margin: 1.2% auto 0;
+  max-width: 98%;
+}
+.wp-caption-text {
+  text-align: center;
+  font-size: 80%;
+}
+.wp-caption .wp-caption-text,.gallery-caption {
+  margin: 0;
+}
+.pagelink {
+  margin-top: 20px;
+  display: block;
+  position: relative;
+  clear: both;
+}
+blockquote {
+  font-size: 2em;
+  line-height: 23px;
+  color: #111;
+  margin-left: 20px;
+  border-left: 1px dotted #999;
+  padding-left: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+/* Table
+--------------------------------------------------------------*/
+table {
+  margin: 0 0 1.5em;
+  width: 100%;
+}
+td,th {
+  padding: 5px;
+  border: 1px solid #eaeaea;
+}
+td:hover {
+  background: #eaeaea;
+}
+tr.alternate {
+  background-color: #efefef;
+}
+th {
+  font-weight: bold;
+  background: #999;
+  color: #fff;
+  text-align: center;
+}
+pre {
+  background: #efefef;
+  font-size: 13px;
+  line-height: 1.2;
+  margin-bottom: 1.6em;
+  padding: 1.6em;
+  overflow: auto;
+  max-width: 100%;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin: 0 1.5em 1.5em;
+}
+.attachment-full {
+  width: 100%;
+  height: 100%;
+}
+select {
+  width: 100%;
+}
+.main-nav select {
+  display: none;
+}
+/* mobile styles
+-----------------------------------------------*/
+/* For devices with screen size lower than 480px */
+@media only screen and (max-width: 480px) {
+  #wrap {
+  width: 320px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+h1 {
+  font-size: 24px;
+  line-height: 31px;
+}
+iframe {
+  width: 100%;
+  height: auto;
+}
+.post-prev a {
+  background: #444;
+  padding: 10px 13px;
+  font-size: 12px;
+  margin-left: -10px;
+  margin-top: -20px;
+}
+.post-next a {
+  margin-left: 252px;
+  margin-top: -20px;
+}
+.post-next a:hover,.post-prev a:hover {
+  background: #777;
+}
+.posttags {
+  float: left;
+}
+.type-post .post-next a {
+  margin-left: 264px;
+}
+.single-post .type-post {
+  width: 310px;
+  margin: 0 auto;
+}
+.type-page img {
+  width: 100%;
+  height: inherit;
+}
+.type-post .pinbin-copy {
+  width: 280px;
+  padding: 15px;
+}
+.type-page {
+  width: 290px;
+  padding: 10px 3% 20px;
+}
+.type-post {
+  width: 310px;
+}
+#comment {
+  width: 97%;
+}
+#comment-form {
+  width: 285px;
+}
+h2 {
+  font-size: 18px;
+  line-height: 25px;
+}
+.size-full {
+  width: 290px !important;
+}
+.comments-area li {
+  width: 290px;
+  clear: both;
+  padding: 0px;
+}
+.post-nav {
+  margin-top: 14px;
+}
+.pinbin-image img {
+  width: 100%;
+  height: auto;
+}
+#post-area {
+  max-width: 310px;
+  margin: 0 auto;
+}
+.type-post h1:first-child {
+  padding-top: 25px;
+}
+#post-area .post .pinbin-link a {
+  margin-left: 263px;
+}
+#post-area .post .pinbin-copy {
+  width: 280px;
+}
+.page .pinbin-copy {
+  padding: 0;
+}
+#post-area .post {
+  width: 310px;
+  display: block;
+}
+}
+/* For devices with screen size lower than 767px */
+@media only screen and (max-width: 767px) {
+  /* Navigation */
+.main-nav ul {
+  display: none;
+}
+.main-nav select {
+  display: inline;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: url('images/mobile-menu-icon.png') no-repeat scroll right center #FFF;
+  appearance: none;
+  padding: 8px 10px;
+  margin: 8px 15px;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  width: 40%;
+}
+#main-nav-wrapper {
+  height: 42px;
+  display: inline;
+  float: none;
+}
+.main-nav {
+  background: #fff;
+}
+}

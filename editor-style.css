@@ -1,0 +1,11 @@
+/**
+ * @package pinbin
+ */
+
+@import url( 'style.css' );
+
+/* Add overwrites as needed so that the content of the editor field is attractive and not broken */
+body { 
+	padding: 0px 10px;
+	width: 630px;
+} 
