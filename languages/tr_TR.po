@@ -1,0 +1,147 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Pinbin\n"
+"POT-Creation-Date: 2013-06-06 13:23+0200\n"
+"PO-Revision-Date: 2015-11-01 15:23+0300\n"
+"Language-Team: Color Awesomeness <info@colorawesomeness.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"Last-Translator: Selman Kandeniz <skandeniz@gmail.com>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: tr_TR\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:14
+msgid "404: Page or File Not Found"
+msgstr "404: Sayfa ya da dosya bulunamadı"
+
+#: 404.php:16
+msgid ""
+"Oops! It seems you stumbled on something that does not exist or was moved"
+msgstr "Amanın! Bu hiç varolmadı ya da taşındı"
+
+#: 404.php:18
+msgid "Need help?"
+msgstr "Yardım mı lazım?"
+
+#: 404.php:20
+msgid "You might try the following:"
+msgstr "Aşağıdakini deneyebilirsiniz:"
+
+#: 404.php:22
+msgid "Check spelling"
+msgstr "Yazılışı kontrol et"
+
+#: 404.php:23
+msgid "Return to  home page"
+msgstr "Ana sayfaya geri dön"
+
+#: 404.php:24
+msgid "Click "
+msgstr "Tıkla"
+
+#: 404.php:24
+msgid "Return button"
+msgstr "Geri dönüş butonu"
+
+#: footer.php:15
+msgid "Pinbin Theme by"
+msgstr "Pinbin Theme by"
+
+#: footer.php:15
+msgid "Color Awesomeness"
+msgstr "Color Awesomeness"
+
+#: footer.php:16
+msgid "Copyright"
+msgstr "Copyright"
+
+#: footer.php:17
+msgid "Powered by"
+msgstr "Powered by"
+
+#: footer.php:17
+msgid "Powered by WordPress"
+msgstr "WordPress ile güçlendirildi"
+
+#: functions.php:54
+msgid "Main Menu"
+msgstr "Ana Menü"
+
+#: header.php:25
+#, php-format
+msgid "Page %s"
+msgstr "Sayfa %s"
+
+#: index.php:36 search.php:33
+msgid "Nothing Found"
+msgstr "Hiçbir şey bulunamadı"
+
+#: index.php:40 search.php:37
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Üzgünüz, fakat arama terimlerinizle hiçbir şey eşleşmedi. Lütfen farklı "
+"anahtar kelimelerle tekrar deneyin. "
+
+#: index.php:47
+msgid "&#171; Previous"
+msgstr "&#171; Önceki"
+
+#: index.php:48
+msgid "Next &#187"
+msgstr "Sonraki &#187"
+
+#: search.php:13
+#, php-format
+msgid "Search Results for: %s"
+msgstr "%s için arama sonuçları"
+
+#: single.php:29
+msgid "By"
+msgstr "Yazan:"
+
+#: options/theme-options.php:45
+msgid "I want this to be my logo!"
+msgstr "Bunun benim logom olmasını istiyorum!"
+
+#: options/theme-options.php:71
+msgid "Pinbin Options"
+msgstr "Pinbin Ayarları"
+
+#: options/theme-options.php:87
+msgid "You can reach us at"
+msgstr "You can reach us at"
+
+#: options/theme-options.php:159
+msgid "Logo Options"
+msgstr "Logo Ayarları"
+
+#: options/theme-options.php:162
+msgid "Logo"
+msgstr "Logo"
+
+#: options/theme-options.php:165
+msgid "Logo Preview"
+msgstr "Logo ön izleme"
+
+#: options/theme-options.php:179
+msgid "Upload your logo. Theme supports GIF, JPEG, PNG."
+msgstr "Logonuzu yükleyin. Tema GIF, JPEG, PNG destekler."
+
+#: options/theme-options.php:187
+msgid "Upload Logo"
+msgstr "Logo yükle"
+
+#: options/theme-options.php:189
+msgid "Delete Logo"
+msgstr "Logoyu sil"
+
+#: options/theme-options.php:191
+msgid "Upload an image for the banner."
+msgstr "Afiş için resim yükleyin."
