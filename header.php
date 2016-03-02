@@ -25,6 +25,10 @@
 
                 <?php if ( $pinbin_options['logo'] != '' ): ?>
                   <div id="logo">
+                      <?php if(is_ssl() ){
+                            $pinbin_options['logo'] = preg_replace("/^http:/i", "https:", $pinbin_options['logo']);
+                        }                   
+                        ?>
                     <img src="<?php echo $pinbin_options['logo']; ?>" />
                   </div>
                 <?php  endif; ?>
